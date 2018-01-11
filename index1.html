@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp1">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+</head>
+<body ng-controller="myCtrl1">
+	<div class="table-responsive">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>S.No</th>
+					<th>Name</th>
+					<th>UserID</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="x in details1">
+					<td>{{$index+1}}</td>
+					<td>{{x.title}}</td>
+					<td>{{x.body}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="script1.js"></script>
+	<script src="services.js"></script>
+</body>
+</html>
